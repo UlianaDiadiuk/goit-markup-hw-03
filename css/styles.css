@@ -105,6 +105,11 @@ border-bottom: 1px solid var(--border-color);
   margin-right: 50px; 
 }
 
+.contacts.list a {
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
 .logo > .part {
   color: var(--logo-blue-color);
 }
