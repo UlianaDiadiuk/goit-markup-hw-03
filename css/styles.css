@@ -5,7 +5,7 @@
   --headers-color: #212121;
   --text-grey-color: #757575;
   --text-white-color: #ffffff;
-  --address-color: #ffffff60;
+  --address-color: rgba(255, 255, 255, 0.6);
   --grey-background: #f5f4fa;
   --background-color: #2f303a;
   --hidden-titles: #ffffff00;
@@ -44,6 +44,18 @@ margin-right: auto;
 margin-left: auto;
 width: 696px;
 }
+
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.example-container {
+  padding: 20px 24px;
+  margin: 0;
+}
+
+
 
 .section {
   padding-top: 94px;
@@ -137,7 +149,7 @@ padding-bottom: 32px;
   letter-spacing: 0.02em;
 }
 
-.hero > h1,
+.hero h1,
 .nav a:hover,
 .nav a:focus,
 .contacts a:hover,
@@ -158,7 +170,12 @@ padding-bottom: 32px;
 
 /* hero part */
 
-.hero > h1 {
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-section h1 {
   margin: 0;
 
   color: var(--text-white-color);
@@ -171,7 +188,7 @@ padding-bottom: 32px;
   text-transform: uppercase;
 }
 
-.hero > button {
+.hero-section button {
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 10px 32px;
@@ -194,8 +211,8 @@ padding-bottom: 32px;
 
 }
 
-.hero > button:hover,
-.hero > button:focus {
+.hero-section button:hover,
+.hero-section button:focus {
   background-color: var(--hover-button);
 }
 
@@ -218,14 +235,18 @@ padding-bottom: 32px;
 }
 
 .values .text {
-  margin-top: 10;
+  margin-top: 10px;
   margin-bottom: 0;
+
+  width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.values h2 {
+.tasks h2 {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -247,6 +268,10 @@ padding-bottom: 32px;
 
 .values-list > li:not(:last-child){
   margin-right: 30px;
+}
+
+.tasks.section {
+  padding-top: 0;
 }
 
 .photo-list { 
@@ -295,8 +320,8 @@ padding-bottom: 32px;
 }
 
 .team h3 {
-    margin-top: 30px;
-    margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 
   font-weight: 500;
   font-size: 16px;
@@ -306,9 +331,9 @@ padding-bottom: 32px;
 }
 
 .team .text {
-    margin-top: 10px;
-    margin-bottom: 0;
-    padding-bottom: 30px;
+    margin: 10px 0 0 0;
+    padding: 0;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -328,18 +353,18 @@ padding-bottom: 32px;
   display: flex;
   justify-content: center;
   margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 16px;
-    padding-left: 0;
+    margin-bottom: 50px;
+    padding: 0;
 } 
 
 .portfolio-button > li:not(:last-child) {
-margin-left: 8px;
+margin-right: 8px;
 }
 
 .porfolio button {
     border-radius: 4px;
     border: 1px solid transparent;
+    padding: 6px 22px;
 
   background-color: var(--grey-background);
   font-family: inherit;
@@ -379,9 +404,8 @@ margin-left: 8px;
 }
 
 .porfolio h2 {
-  margin-top: 20px;
-  margin-bottom: 0;
-  padding-left: 24px;
+  margin: 0;
+  padding: 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -390,10 +414,8 @@ margin-left: 8px;
 }
 
 .example .text {
-    margin-top: 4px;
-    margin-bottom: 0;
-    padding-left: 24px;
-    padding-bottom: 20px;
+    margin: 4px 0 0 0;
+    padding: 0;
 
   font-size: 16px;
   line-height: 1.88;
